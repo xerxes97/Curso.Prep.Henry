@@ -1,0 +1,19 @@
+*{
+    background-color: #000;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-justify: distribute;
+}
+h1, h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+h1{
+    color: transparent;
+    -webkit-text-stroke: 2px #fdd000;
+}
+body{
+    width: 90%;
+    margin: auto;
+    padding: 0px;
+}
