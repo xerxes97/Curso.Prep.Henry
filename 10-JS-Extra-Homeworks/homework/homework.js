@@ -10,6 +10,17 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+
+    var arr=[];
+    var x=0;
+
+  for(let clave in objeto){
+    arr.push([]);
+    arr[x][0]=clave;
+    arr[x][1]=objeto[clave];
+    x++;
+  }
+  return arr;
 }
 
 
@@ -18,6 +29,12 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+
+  var rep={};
+
+  string.split('').forEach((letra) =>{rep[letra] =(rep[letra] || 0)+1});
+  for (letra in rep){console.log(letra);console.log(rep[letra]);}
+  return rep;
 }
 
 
@@ -56,7 +73,7 @@ function asAmirror(str) {
     for (let j = palabra.length; j >= 0; j--) {
       mirror+=palabra.charAt(j);
     }
-    if (i<array.length) {
+    if (i<array.length-1) {
       mirror+=" ";
     }
   }
@@ -113,6 +130,7 @@ function sortArray(arr) {
       
     }
   }
+  return arr;
 }
 
 
